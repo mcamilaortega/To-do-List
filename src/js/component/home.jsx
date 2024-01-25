@@ -17,7 +17,7 @@ const Home = () => {
     setTodo("");
   };
   const removeTodos = (todo) => {
-    const newTodos = todos.filter((task) => task.label !== todo.label);
+    const newTodos = todos.filter((task) => task!== todo);
     setTodos(newTodos);
   };
   return (
